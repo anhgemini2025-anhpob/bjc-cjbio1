@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth" data-theme="dark" data-font-scale="md">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>BJC Specialties Vietnam × CJ BIO | Executive Presentation (15 Oct 2026)</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter & Noto Sans KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Inter"', '"Noto Sans KR"', 'sans-serif'],
+            mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace']
+          },
+          colors: {
+            bjc: {
+              emerald: '#008A4B',
+              forest: '#1A3A2A'
+            },
+            cj: {
+              blue: '#0055A5',
+              amber: '#EF7C00',
+              red: '#E31B23'
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* ==========================================================================
+       1. ANTI-COPY PROTECTION & DYNAMIC FONT SIZE SCALING
+       ========================================================================== */
+    *, *::before, *::after {
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -webkit-touch-callout: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html[data-font-scale="sm"] { font-size: 14px; }
+    html[data-font-scale="md"] { font-size: 16px; }
+    html[data-font-scale="lg"] { font-size: 18px; }
+    html[data-font-scale="xl"] { font-size: 20px; }
+
+    /* ==========================================================================
+       2. DARK / LIGHT HYBRID THEME SYSTEM
+       ========================================================================== */
+    :root, html[data-theme="dark"] {
+      --bg-grad: linear-gradient(135deg, #0F172A 0%, #132238 50%, #1E293B 100%);
+      --text-main: #F8FAFC;
+      --text-muted: #CBD5E1;
+      --card-bg: rgba(255, 255, 255, 0.06);
+      --card-border: rgba(255, 255, 255, 0.14);
+      --subcard-bg: rgba(15, 23, 42, 0.72);
+      --header-bg: rgba(15, 23, 42, 0.85);
+      --watermark-color: #ffffff;
+      --watermark-opacity: 0.038;
+    }
+
+    html[data-theme="light"] {
+      --bg-grad: linear-gradient(135deg, #F8FAFC 0%, #EEF2F6 50%, #E2E8F0 100%);
+      --text-main: #0F172A;
+      --text-muted: #334155;
+      --card-bg: rgba(255, 255, 255, 0.92);
+      --card-border: rgba(15, 23, 42, 0.12);
+      --subcard-bg: rgba(248, 250, 252, 0.96);
+      --header-bg: rgba(255, 255, 255, 0.90);
+      --watermark-color: #0F172A;
+      --watermark-opacity: 0.035;
+    }
+
+    body {
+      background: var(--bg-grad);
+      color: var(--text-main);
+      overflow-x: hidden;
+      min-height: 100vh;
+      min-height: 100dvh;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .glass-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+
+    .glass-subcard {
+      background: var(--subcard-bg);
+      border: 1px solid var(--card-border);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: all 0.2s ease;
+    }
+
+    /* Light Mode Text, Border & Surface Overrides for Ultra-High Contrast Readability */
+    html[data-theme="light"] .text-white {
+      color: #0F172A !important;
+    }
+    html[data-theme="light"] .text-slate-100,
+    html[data-theme="light"] .text-slate-200,
+    html[data-theme="light"] .text-slate-300 {
+      color: #1E293B !important;
+    }
+    html[data-theme="light"] .text-slate-400 {
+      color: #475569 !important;
+    }
+    html[data-theme="light"] .text-emerald-300,
+    html[data-theme="light"] .text-emerald-400 {
+      color: #047857 !important;
+    }
+    html[data-theme="light"] .text-emerald-100,
+    html[data-theme="light"] .text-emerald-200 {
+      color: #064E3B !important;
+    }
+    html[data-theme="light"] .text-blue-100,
+    html[data-theme="light"] .text-blue-200,
+    html[data-theme="light"] .text-blue-300,
+    html[data-theme="light"] .text-blue-400 {
+      color: #0055A5 !important;
+    }
+    html[data-theme="light"] .text-amber-100,
+    html[data-theme="light"] .text-amber-200,
+    html[data-theme="light"] .text-amber-300,
+    html[data-theme="light"] .text-amber-400 {
+      color: #B45309 !important;
+    }
+    html[data-theme="light"] .text-red-100,
+    html[data-theme="light"] .text-red-200,
+    html[data-theme="light"] .text-red-300,
+    html[data-theme="light"] .text-red-400 {
+      color: #B91C1C !important;
+    }
+    html[data-theme="light"] .bg-slate-900,
+    html[data-theme="light"] .bg-slate-900\/95,
+    html[data-theme="light"] .bg-slate-900\/90,
+    html[data-theme="light"] .bg-slate-900\/85,
+    html[data-theme="light"] .bg-slate-900\/80,
+    html[data-theme="light"] .bg-slate-900\/75,
+    html[data-theme="light"] .bg-slate-900\/70,
+    html[data-theme="light"] .bg-slate-800\/95,
+    html[data-theme="light"] .bg-slate-800\/90,
+    html[data-theme="light"] .bg-slate-800\/80 {
+      background-color: #FFFFFF !important;
+      border-color: rgba(15, 23, 42, 0.15) !important;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+    html[data-theme="light"] .bg-slate-950\/90,
+    html[data-theme="light"] .bg-slate-950\/80,
+    html[data-theme="light"] .bg-slate-950\/70,
+    html[data-theme="light"] .bg-slate-950\/60 {
+      background-color: #F1F5F9 !important;
+      border-color: rgba(15, 23, 42, 0.14) !important;
+    }
+    html[data-theme="light"] .bg-slate-700 {
+      background-color: #CBD5E1 !important;
+    }
+    html[data-theme="light"] .bg-white\/5,
+    html[data-theme="light"] .bg-white\/10,
+    html[data-theme="light"] .bg-white\/15,
+    html[data-theme="light"] .bg-white\/20 {
+      background-color: rgba(15, 23, 42, 0.055) !important;
+      border-color: rgba(15, 23, 42, 0.14) !important;
+    }
+    html[data-theme="light"] .border-white\/10,
+    html[data-theme="light"] .border-white\/15,
+    html[data-theme="light"] .border-white\/20 {
+      border-color: rgba(15, 23, 42, 0.14) !important;
+    }
+    html[data-theme="light"] .divide-white\/10 > :not([hidden]) ~ :not([hidden]) {
+      border-color: rgba(15, 23, 42, 0.12) !important;
+    }
+    html[data-theme="light"] .bg-emerald-950\/90,
+    html[data-theme="light"] .bg-emerald-950\/80,
+    html[data-theme="light"] .bg-emerald-950\/70,
+    html[data-theme="light"] .bg-emerald-950\/60,
+    html[data-theme="light"] .bg-emerald-950\/50,
+    html[data-theme="light"] .bg-emerald-950\/45,
+    html[data-theme="light"] .bg-emerald-950\/40,
+    html[data-theme="light"] .bg-emerald-950\/35 {
+      background-color: #ECFDF5 !important;
+      border-color: rgba(0, 138, 75, 0.35) !important;
+    }
+    html[data-theme="light"] .bg-blue-950\/80,
+    html[data-theme="light"] .bg-blue-950\/60,
+    html[data-theme="light"] .bg-blue-950\/50,
+    html[data-theme="light"] .bg-blue-950\/45,
+    html[data-theme="light"] .bg-blue-950\/40,
+    html[data-theme="light"] .bg-blue-950\/35 {
+      background-color: #EFF6FF !important;
+      border-color: rgba(0, 85, 165, 0.35) !important;
+    }
+    html[data-theme="light"] .bg-red-950\/50,
+    html[data-theme="light"] .bg-red-950\/40,
+    html[data-theme="light"] .bg-red-950\/35 {
+      background-color: #FEF2F2 !important;
+      border-color: rgba(227, 27, 35, 0.35) !important;
+    }
+    html[data-theme="light"] .bg-amber-950\/50,
+    html[data-theme="light"] .bg-amber-950\/40,
+    html[data-theme="light"] .bg-amber-950\/35 {
+      background-color: #FFFBEB !important;
+      border-color: rgba(239, 124, 0, 0.35) !important;
+    }
+    html[data-theme="light"] .keep-white-text,
+    html[data-theme="light"] .keep-white-text * {
+      color: #FFFFFF !important;
+    }
+
+    /* Tilted Repeated Confidential Watermark Overlay */
+    #watermark-layer {
+      position: fixed;
+      inset: -40%;
+      z-index: 35;
+      pointer-events: none;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(340px, 1fr));
+      gap: 5rem 3rem;
+      transform: rotate(-24deg);
+      opacity: var(--watermark-opacity);
+      overflow: hidden;
+    }
+
+    .watermark-item {
+      font-family: 'Plus Jakarta Sans', monospace;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      white-space: nowrap;
+      color: var(--watermark-color);
+    }
+
+    /* Subtle Red Shake Animation for Incorrect Password */
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-10px); }
+      40%, 80% { transform: translateX(10px); }
+    }
+
+    .animate-shake {
+      animation: shake 0.42s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      border-color: rgba(227, 27, 35, 0.8) !important;
+      box-shadow: 0 0 35px rgba(227, 27, 35, 0.35) !important;
+    }
+
+    /* Hide Scrollbar on Horizontal Pill Navs */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+    /* Safe Area Padding for iPhone Bottom Bar */
+    .pb-safe {
+      padding-bottom: max(1rem, env(safe-area-inset-bottom));
+    }
+  </style>
+</head>
+
+<body class="antialiased selection:bg-emerald-500 selection:text-white relative pb-20 lg:pb-8">
+
+  <!-- Ambient Brand Glow Blobs -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    <div class="absolute -top-32 -left-32 w-[450px] h-[450px] rounded-full bg-[#008A4B]/15 blur-[120px]"></div>
+    <div class="absolute top-1/3 -right-32 w-[450px] h-[450px] rounded-full bg-[#0055A5]/15 blur-[130px]"></div>
+    <div class="absolute -bottom-40 left-1/3 w-[400px] h-[400px] rounded-full bg-[#EF7C00]/10 blur-[120px]"></div>
+  </div>
+
+  <!-- Dynamic Tilted Background Watermark -->
+  <div id="watermark-layer" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       GATEKEEPER PASSWORD SCREEN ("BjcCj2026")
+       ========================================================================== -->
+  <div id="gatekeeper-overlay" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-2xl transition-opacity duration-400">
+    <div id="gk-card" class="w-full max-w-md rounded-3xl bg-slate-900/95 border border-white/20 p-6 sm:p-8 shadow-2xl relative overflow-hidden">
+      <div class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-[#008A4B] via-[#0055A5] to-[#EF7C00]"></div>
+
+      <!-- Top Bar: Badge & Language Switcher with Flag Icons -->
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-5">
+        <span id="gk-badge" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+          CONFIDENTIAL BRIEFING
+        </span>
+        <div class="flex items-center gap-1 bg-slate-950/80 p-1 rounded-xl border border-white/15">
+          <button type="button" onclick="setLanguage('vi')" data-lang-btn="vi" class="px-2 py-1 rounded-lg text-xs font-bold flex items-center gap-1.5 cursor-pointer transition-all">
+            <svg class="w-4 h-3 rounded-[2px] shrink-0 shadow-xs" viewBox="0 0 30 20"><rect width="30" height="20" fill="#DA251D"/><polygon points="15,4 11.47,14.85 20.71,8.15 9.29,8.15 18.53,14.85" fill="#FFFF00"/></svg>
+            <span>VN</span>
+          </button>
+          <button type="button" onclick="setLanguage('en')" data-lang-btn="en" class="px-2 py-1 rounded-lg text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-all">
+            <svg class="w-4 h-3 rounded-[2px] shrink-0 shadow-xs" viewBox="0 0 60 30"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#FFF" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="2.5"/><path d="M30,0 v30 M0,15 h60" stroke="#FFF" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+            <span>EN</span>
+          </button>
+          <button type="button" onclick="setLanguage('ko')" data-lang-btn="ko" class="px-2 py-1 rounded-lg text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-all">
+            <svg class="w-4 h-3 rounded-[2px] shrink-0 shadow-xs" viewBox="0 0 30 20"><rect width="30" height="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/><circle cx="15" cy="10" r="5" fill="#CD2E3A"/><path d="M15,10 a5,5 0 0,0 5,0 a2.5,2.5 0 0,1 -5,0 a2.5,2.5 0 0,0 -5,0 a5,5 0 0,0 10,0" fill="#0047A0"/><g stroke="#000" stroke-width="1.1"><line x1="6" y1="4" x2="9" y2="7"/><line x1="21" y1="4" x2="24" y2="7"/><line x1="6" y1="16" x2="9" y2="13"/><line x1="21" y1="16" x2="24" y2="13"/></g></svg>
+            <span>KR</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Dual Logos Display -->
+      <div class="flex items-center justify-center gap-4 bg-white rounded-2xl p-3.5 mb-5 shadow-inner border border-slate-200">
+        <img src="/Logo BJC specialties.jpg" onerror="this.src='Logo BJC specialties.jpg'" alt="BJC Specialties Logo" class="h-8 sm:h-10 object-contain" />
+        <span class="text-slate-400 font-light text-xl">×</span>
+        <img src="/Logo CJ bio.png" onerror="this.src='Logo CJ bio.png'" alt="CJ BIO Logo" class="h-8 sm:h-10 object-contain" />
+      </div>
+
+      <h1 id="gk-title" class="text-xl sm:text-2xl font-extrabold text-white text-center mb-1.5">
+        BJC Specialties Vietnam × CJ BIO
+      </h1>
+      <p id="gk-subtitle" class="text-xs sm:text-sm text-emerald-300 font-semibold text-center mb-1.5">
+        TasteNrich® HYBIND & AMINATURE® FGAA
+      </p>
+      <p id="gk-meta" class="text-[11px] text-slate-400 text-center mb-5">
+        15 October 2026 · BJC Specialties Vietnam
+      </p>
+
+      <!-- Password Form -->
+      <form onsubmit="handleGatekeeperSubmit(event)" class="space-y-3.5">
+        <div class="relative">
+          <input
+            id="gk-password-input"
+            type="password"
+            autocomplete="off"
+            autofocus
+            data-allow-copy="true"
+            placeholder="Enter Access Code..."
+            class="w-full px-4 py-3 pr-12 rounded-xl bg-slate-950/90 border border-white/20 text-white placeholder-slate-400 text-sm font-mono focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-500/30 transition-all"
+          />
+          <button type="button" onclick="togglePasswordVisibility()"
+            class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white text-xs font-mono px-1.5 py-1">
+            👁
+          </button>
+        </div>
+
+        <div id="gk-error-msg" class="hidden rounded-xl bg-red-500/15 border border-red-500/40 px-3 py-2 text-xs font-semibold text-red-300 text-center"></div>
+
+        <button type="submit"
+          class="keep-white-text w-full py-3 px-5 rounded-xl font-extrabold text-sm bg-gradient-to-r from-[#008A4B] via-emerald-600 to-[#0055A5] hover:from-emerald-500 hover:to-blue-500 text-white shadow-lg shadow-emerald-600/25 transition-all cursor-pointer flex items-center justify-center gap-2">
+          <span id="gk-unlock-btn-text">Authenticate & Enter</span>
+        </button>
+      </form>
+
+      <div id="gk-security-note" class="mt-4 pt-3 border-t border-white/10 text-[10px] text-slate-400 text-center">
+        Protected by Anti-Copy Suite
+      </div>
+      <div class="mt-2 text-[11px] text-slate-400 text-center select-none font-medium">
+        Prepared &amp; Designed by <span class="text-slate-200 font-semibold">Duy Anh</span> (October 2026)
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       2-ROW STICKY HEADER (ROW 1: LOGOS + FLAG LANGUAGE SWITCHER | ROW 2: 6 TABS)
+       Zero overlap / Zero cut-off text
+       ========================================================================== -->
+  <header class="sticky top-0 z-40 backdrop-blur-xl border-b border-white/15" style="background: var(--header-bg);">
+    <div class="max-w-6xl mx-auto px-3 sm:px-6">
+      <!-- ROW 1: Brand Logos (Left) + Flag Language Bar & Reader Controls (Right) -->
+      <div class="flex flex-wrap items-center justify-between py-2 gap-2">
+        <!-- Dual Logos + Meeting Badge -->
+        <div onclick="selectNavModule('mod1')" class="flex items-center gap-2.5 cursor-pointer shrink-0">
+          <div class="flex items-center gap-2 bg-white px-2.5 py-1 rounded-xl shadow-sm border border-slate-200/80">
+            <img src="/Logo BJC specialties.jpg" onerror="this.src='Logo BJC specialties.jpg'" alt="BJC Specialties" class="h-5 sm:h-6 object-contain" />
+            <span class="text-slate-400 font-bold text-xs">×</span>
+            <img src="/Logo CJ bio.png" onerror="this.src='Logo CJ bio.png'" alt="CJ BIO" class="h-5 sm:h-6 object-contain" />
+          </div>
+          <span id="header-meeting-badge" class="hidden md:inline-flex items-center px-2.5 py-1 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-[11px] font-bold text-emerald-300">
+            15/10/2026
+          </span>
+        </div>
+
+        <!-- Dedicated Language Switcher with Flag Icons + Theme + Font Size + Lock -->
+        <div class="flex items-center gap-1.5 shrink-0">
+          <!-- Language Switcher with Colorful SVG Flags (VN | EN | KR) -->
+          <div class="flex items-center gap-1 bg-white/5 p-1 rounded-xl border border-white/15">
+            <button onclick="setLanguage('vi')" data-lang-btn="vi"
+              class="px-2.5 py-1 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer">
+              <svg class="w-4 h-3 rounded-[2px] shrink-0 shadow-xs" viewBox="0 0 30 20"><rect width="30" height="20" fill="#DA251D"/><polygon points="15,4 11.47,14.85 20.71,8.15 9.29,8.15 18.53,14.85" fill="#FFFF00"/></svg>
+              <span class="hidden sm:inline">Tiếng Việt</span>
+              <span class="sm:hidden">VN</span>
+            </button>
+            <button onclick="setLanguage('en')" data-lang-btn="en"
+              class="px-2.5 py-1 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer">
+              <svg class="w-4 h-3 rounded-[2px] shrink-0 shadow-xs" viewBox="0 0 60 30"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#FFF" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="2.5"/><path d="M30,0 v30 M0,15 h60" stroke="#FFF" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+              <span class="hidden sm:inline">English</span>
+              <span class="sm:hidden">EN</span>
+            </button>
+            <button onclick="setLanguage('ko')" data-lang-btn="ko"
+              class="px-2.5 py-1 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer">
+              <svg class="w-4 h-3 rounded-[2px] shrink-0 shadow-xs" viewBox="0 0 30 20"><rect width="30" height="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/><circle cx="15" cy="10" r="5" fill="#CD2E3A"/><path d="M15,10 a5,5 0 0,0 5,0 a2.5,2.5 0 0,1 -5,0 a2.5,2.5 0 0,0 -5,0 a5,5 0 0,0 10,0" fill="#0047A0"/><g stroke="#000" stroke-width="1.1"><line x1="6" y1="4" x2="9" y2="7"/><line x1="21" y1="4" x2="24" y2="7"/><line x1="6" y1="16" x2="9" y2="13"/><line x1="21" y1="16" x2="24" y2="13"/></g></svg>
+              <span class="hidden sm:inline">한국어</span>
+              <span class="sm:hidden">KR</span>
+            </button>
+          </div>
+
+          <!-- Theme Toggle (Light / Dark) -->
+          <button onclick="toggleTheme()" id="theme-toggle-btn"
+            class="w-8 h-8 rounded-xl bg-white/10 hover:bg-emerald-500/20 border border-white/15 text-sm flex items-center justify-center transition-all cursor-pointer">
+            <span id="theme-toggle-icon">☀️</span>
+          </button>
+
+          <!-- Font Size Controls (A- / A+) -->
+          <div class="flex items-center bg-white/5 rounded-xl p-0.5 border border-white/15">
+            <button onclick="changeFontScale(-1)" class="px-2 py-1 rounded-lg text-xs font-extrabold text-slate-300 hover:text-white hover:bg-white/10 transition-all cursor-pointer">A-</button>
+            <button onclick="resetFontScale()" id="font-scale-indicator" class="hidden sm:inline px-1 py-1 text-[10px] font-mono font-bold text-emerald-300 cursor-pointer">100%</button>
+            <button onclick="changeFontScale(1)" class="px-2 py-1 rounded-lg text-xs font-extrabold text-slate-300 hover:text-white hover:bg-white/10 transition-all cursor-pointer">A+</button>
+          </div>
+
+          <!-- Lock Button -->
+          <button onclick="lockPresentation()" id="lock-screen-btn"
+            class="w-8 h-8 rounded-xl bg-white/5 hover:bg-red-500/20 text-slate-300 hover:text-red-300 border border-white/10 flex items-center justify-center transition-all cursor-pointer">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- ROW 2: Dedicated Full-Width 4-Tab Navigation Bar (Desktop) - Never Overlaps Controls -->
+      <nav id="nav-tabs-container" class="hidden lg:grid grid-cols-4 gap-2 py-1.5 border-t border-white/10">
+        <!-- Populated by app.js -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN COMPACT PRESENTATION STAGE (USER-CENTRIC SLIDE DECK VIEW)
+       ========================================================================== -->
+  <main class="relative z-10 max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-6">
+    <!-- Top Slide Progress Bar -->
+    <div id="deck-control-bar" class="mb-3 flex items-center justify-between gap-2"></div>
+
+    <!-- 4 Modules (Shown 1 at a time by default for zero visual clutter) -->
+    <div class="space-y-5">
+      <section id="section-mod1"></section>
+      <section id="section-mod2"></section>
+      <section id="section-mod3"></section>
+      <section id="section-mod4"></section>
+    </div>
+
+    <!-- Bottom Prev / Next Slide Navigation -->
+    <div id="deck-footer-nav" class="mt-5"></div>
+
+    <!-- Bottom Executive Presentation Footer & Credits -->
+    <footer id="deck-author-footer" class="mt-6 mb-16 lg:mb-4 text-center select-none">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-subcard text-xs text-slate-400 shadow-sm border border-white/10">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Prepared &amp; Designed by <strong class="text-slate-200 font-semibold">Duy Anh</strong> (October 2026)</span>
+      </div>
+      <p class="text-[11px] text-slate-400 mt-1.5 font-medium">
+        BJC Specialties Vietnam × CJ BIO Strategic Partnership Meeting
+      </p>
+    </footer>
+  </main>
+
+  <!-- ==========================================================================
+       MOBILE / IPHONE / ANDROID BOTTOM NAVIGATION BAR
+       ========================================================================== -->
+  <nav id="mobile-bottom-nav" class="lg:hidden fixed bottom-0 inset-x-0 z-40 backdrop-blur-xl border-t border-white/15 px-2 py-1.5 pb-safe" style="background: var(--header-bg);">
+    <!-- Populated by app.js -->
+  </nav>
+
+  <!-- ==========================================================================
+       CLICK-TO-REVEAL MODAL OVERLAY
+       ========================================================================== -->
+  <div id="app-modal-backdrop" onclick="if(event.target === this) closeModal()"
+    class="hidden opacity-0 fixed inset-0 z-50 flex items-end sm:items-center justify-center sm:p-4 bg-slate-950/75 backdrop-blur-md transition-opacity duration-200">
+    <div class="w-full max-w-3xl max-h-[88dvh] flex flex-col rounded-t-3xl sm:rounded-3xl bg-slate-900 border border-white/20 shadow-2xl overflow-hidden">
+      <!-- Modal Header -->
+      <div class="px-5 py-3.5 bg-slate-950/70 border-b border-white/15 flex items-center justify-between gap-3">
+        <div class="min-w-0">
+          <h3 id="app-modal-title" class="text-base sm:text-lg font-extrabold text-white truncate"></h3>
+          <p id="app-modal-subtitle" class="text-xs text-emerald-300 mt-0.5 truncate"></p>
+        </div>
+        <button onclick="closeModal()" class="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-slate-300 hover:text-white transition-colors cursor-pointer shrink-0">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <!-- Modal Body -->
+      <div id="app-modal-body" class="p-4 sm:p-6 overflow-y-auto"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       CLICK-TO-REVEAL SLIDE-OVER DRAWER
+       ========================================================================== -->
+  <div id="app-drawer-backdrop" onclick="if(event.target === this) closeDrawer()"
+    class="hidden opacity-0 fixed inset-0 z-50 flex justify-end bg-slate-950/75 backdrop-blur-sm transition-opacity duration-250">
+    <div id="app-drawer-panel" class="w-full max-w-xl bg-slate-900 border-l border-white/20 h-full flex flex-col shadow-2xl transform translate-x-full transition-transform duration-250">
+      <div class="px-5 py-3.5 bg-slate-950/80 border-b border-white/15 flex items-center justify-between gap-3">
+        <div class="min-w-0">
+          <h3 id="app-drawer-title" class="text-base sm:text-lg font-extrabold text-white truncate"></h3>
+          <p id="app-drawer-subtitle" class="text-xs text-blue-300 mt-0.5 truncate"></p>
+        </div>
+        <button onclick="closeDrawer()" class="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-slate-300 hover:text-white transition-colors cursor-pointer shrink-0">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div id="app-drawer-body" class="p-4 sm:p-6 overflow-y-auto flex-1"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SECURITY TOAST NOTIFICATION
+       ========================================================================== -->
+  <div id="security-toast" class="opacity-0 translate-y-4 pointer-events-none fixed bottom-20 lg:bottom-6 right-4 z-50 max-w-xs rounded-2xl bg-slate-900/95 border border-red-500/50 px-4 py-2.5 shadow-2xl flex items-center gap-2.5 transition-all duration-300">
+    <span class="w-2 h-2 rounded-full bg-red-500 shrink-0 animate-ping"></span>
+    <span id="security-toast-text" class="text-xs font-semibold text-red-200">
+      Confidential Presentation
+    </span>
+  </div>
+
+  <!-- Application Scripts -->
+  <script src="/data-i18n.js?v=20261015-bjc-cjbio1" onerror="var s=document.createElement('script');s.src='data-i18n.js?v=20261015-bjc-cjbio1';document.body.appendChild(s);"></script>
+  <script src="/app.js?v=20261015-bjc-cjbio1" onerror="var s=document.createElement('script');s.src='app.js?v=20261015-bjc-cjbio1';document.body.appendChild(s);"></script>
+</body>
+</html>
