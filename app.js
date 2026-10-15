@@ -1633,40 +1633,6 @@
             })
             .join("")}
         </div>
-
-        <!-- Concluding Strategic Partnership Proposal & Action Box (4-Module Edition) -->
-        <div class="mt-6 rounded-2xl bg-emerald-950/60 border-2 border-emerald-500/45 p-4 sm:p-5 text-center">
-          <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase bg-emerald-500/20 text-emerald-300 border border-emerald-500/35 mb-2">
-            ${m4.ctaBox ? m4.ctaBox.badge : "STRATEGIC PARTNERSHIP"}
-          </span>
-          <h3 class="text-sm sm:text-base font-extrabold text-white max-w-3xl mx-auto mb-3.5">
-            ${m4.ctaBox ? m4.ctaBox.title : "Đề Xuất Của Chúng Tôi: Chỉ Định BJCS Việt Nam Làm Đối Tác Phân Phối Chiến Lược HYBIND & FGAA Tại Việt Nam"}
-          </h3>
-          <div class="flex flex-wrap items-center justify-center gap-2.5">
-            <button onclick="openSampleProtocolModal()"
-              class="keep-white-text inline-flex items-center gap-1.5 px-4 py-2 rounded-xl font-bold text-xs sm:text-sm bg-emerald-600 hover:bg-emerald-500 text-white shadow cursor-pointer">
-              <span>🧪</span>
-              <span>${m4.ctaBox ? m4.ctaBox.btnSample : "Yêu Cầu Quy Trình Mẫu Thử"}</span>
-            </button>
-
-            <button onclick="openDownloadPdfModal()"
-              class="keep-white-text inline-flex items-center gap-1.5 px-4 py-2 rounded-xl font-bold text-xs sm:text-sm bg-blue-600 hover:bg-blue-500 text-white shadow cursor-pointer">
-              <span>📄</span>
-              <span>${m4.ctaBox ? m4.ctaBox.btnPdf : "Tải Tài Liệu Họp (PDF)"}</span>
-            </button>
-
-            <button onclick="openContactModal()"
-              class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl font-bold text-xs sm:text-sm bg-white/10 hover:bg-white/20 text-white border border-white/20 cursor-pointer">
-              <span>🏢</span>
-              <span>${m4.ctaBox ? m4.ctaBox.btnContact : "Thông Tin Liên Hệ & Văn Phòng"}</span>
-            </button>
-          </div>
-
-          <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-center gap-2 text-[11px] sm:text-xs text-slate-300 select-none">
-            <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-            <span>Executive Presentation Prepared &amp; Designed by <strong class="text-white font-semibold">Duy Anh</strong> (October 2026)</span>
-          </div>
-        </div>
       </div>
     `;
   }
