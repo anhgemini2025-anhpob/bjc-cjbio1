@@ -1693,26 +1693,22 @@
           </span>
         </div>
 
-        <!-- 2x2 Visual Grid instead of stacked long text -->
+        <!-- Streamlined Supplier-Facing 2-Column Grid (Applications + Solution Value) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div class="rounded-xl bg-slate-800/90 border border-white/15 p-3.5">
-            <div class="text-[11px] font-bold uppercase text-slate-400 mb-1">🎯 ${lbl.applications}</div>
-            <p class="text-xs sm:text-sm text-white leading-relaxed">${loc.apps}</p>
+          <div class="rounded-xl bg-slate-800/90 border border-white/15 p-4 flex flex-col">
+            <div class="text-[11px] font-bold uppercase text-emerald-300 mb-1.5 flex items-center gap-1.5">
+              <span>🎯</span>
+              <span>${lbl.applications}</span>
+            </div>
+            <p class="text-xs sm:text-sm text-white leading-relaxed flex-1">${loc.apps}</p>
           </div>
 
-          <div class="rounded-xl bg-red-950/35 border border-red-500/30 p-3.5">
-            <div class="text-[11px] font-bold uppercase text-red-300 mb-1">⚠️ ${lbl.painPoint}</div>
-            <p class="text-xs sm:text-sm text-red-100 leading-relaxed">${loc.pain}</p>
-          </div>
-
-          <div class="rounded-xl bg-emerald-950/45 border border-emerald-500/35 p-3.5">
-            <div class="text-[11px] font-bold uppercase text-emerald-300 mb-1">💡 ${lbl.valueProp}</div>
-            <p class="text-xs sm:text-sm text-emerald-100 leading-relaxed">${loc.value}</p>
-          </div>
-
-          <div class="rounded-xl bg-blue-950/45 border border-blue-500/35 p-3.5">
-            <div class="text-[11px] font-bold uppercase text-blue-300 mb-1">🔑 ${lbl.ksf}</div>
-            <p class="text-xs sm:text-sm text-blue-100 leading-relaxed">${loc.ksf}</p>
+          <div class="rounded-xl bg-emerald-950/45 border border-emerald-500/35 p-4 flex flex-col">
+            <div class="text-[11px] font-bold uppercase text-emerald-300 mb-1.5 flex items-center gap-1.5">
+              <span>💡</span>
+              <span>${lbl.valueProp}</span>
+            </div>
+            <p class="text-xs sm:text-sm text-emerald-100 leading-relaxed flex-1">${loc.value}</p>
           </div>
         </div>
       </div>
