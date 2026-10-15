@@ -1,5 +1,5 @@
 // ============================================================================
-// MULTILINGUAL DATA STORE (EN | VI | KO) - CONDENSED 4-MODULE EDITION
+// MULTILINGUAL DATA STORE (EN | VI | KO)
 // BJC Specialties Vietnam (BJCS) x CJ BIO Strategic Partnership (15 Oct 2026)
 // ============================================================================
 
@@ -444,8 +444,8 @@ window.APP_DATA = {
           ]
         },
         "hybindQuestionsModal": {
-          "title": "HYBIND Customer Pain Points & Technical Alignment with CJ BIO",
-          "subtitle": "BJCS Solution-Selling responses & 5 priority items to confirm with CJ BIO on 15 Oct 2026",
+          "title": "HYBIND Customer Pain Points & 5 Strategic Questions for CJ BIO",
+          "subtitle": "Preparation for Next Technical & Commercial Deep-Dive Session: 30 October 2026 (10:00 AM)",
           "pains": [
             {
               "area": "Cost & Economics",
@@ -469,16 +469,16 @@ window.APP_DATA = {
             }
           ],
           "questions": [
-            "Q1 (Optimal Dosage %): What are CJ BIO's recommended HYBIND dosages across emulsified sausage/giò lụa vs. whole-muscle ham vs. marinated chicken?",
-            "Q2 (Co-Formulation): Does HYBIND replace phosphate 1:1 standalone, or do specific matrices benefit from starch/carrageenan/hydrocolloid synergy?",
-            "Q3 (TCO Case Studies): Can CJ BIO share regional Battle Cards & plant trial data showing exact Cooking Yield % gains vs. STPP?",
-            "Q4 (Seafood Validation & R&D Support): What is CJ BIO's validated data for shrimp/pangasius NP soaking, and can CJ BIO Vietnam R&D join onsite plant trials?",
-            "Q5 (Commercial & Shelf Life): Confirm CIF/Ex-works pricing, MOQ, lead time from Indonesia plant, and shelf-life under Vietnam warehouse conditions."
+            "Question 1 (Origin & Form D Tariff): With production based in Jombang (Indonesia), can CJ BIO supply ASEAN Form D C/O to secure 0% preferential import tariff under ATIGA into Vietnam?",
+            "Question 2 (Seafood Trials & Protein Extraction): Given proven Myosin Heavy Chain (200kDa) extraction in pork/poultry, does CJ BIO have benchmarking data on Pangasius fillets and surimi to replace STPP for EU/US exports?",
+            "Question 3 (Dosage & Packaging Spec): For Material Code 209581 (20kg Carton Box), what is the certified shelf life under Vietnam tropical warehousing, and is 0.2%–0.8% dosage optimized for both emulsified and coarse sausage lines?",
+            "Question 4 (Vietnam Regulatory Classification): Does CJ BIO recommend declaring HYBIND as 'Natural Fermented Flavoring / Yeast Extract' (Food Ingredient) or 'Food Additive' under Decree 15/2018/ND-CP, and can ASEAN precedents be shared?",
+            "Question 5 (Sample Delivery Prior to 30 Oct): Can CJ BIO deliver 1kg–5kg lab samples of Material Code 209581 to BJCS HCMC lab ahead of the 30 October 2026 meeting for preliminary bench testing?"
           ]
         },
         "fgaaQuestionsModal": {
-          "title": "FGAA Customer Pain Points & Technical Alignment with CJ BIO",
-          "subtitle": "BJCS Formulation-Selling responses & 5 priority items to confirm with CJ BIO on 15 Oct 2026",
+          "title": "AMINATURE® FGAA Customer Pain Points & 5 Strategic Questions for CJ BIO",
+          "subtitle": "Preparation for Next Technical & Commercial Deep-Dive Session: 30 October 2026 (10:00 AM)",
           "pains": [
             {
               "area": "Taste & Sensory",
@@ -502,11 +502,11 @@ window.APP_DATA = {
             }
           ],
           "questions": [
-            "Q1 (Taste-Masking Guidelines): Does CJ BIO have standard flavor-masking & pH-buffering guidelines for L-Arginine and L-Histidine in RTD beverages?",
-            "Q2 (Synergistic Ratio): What is CJ BIO's recommended golden ratio of L-Arginine + L-Citrulline in pre-workout & energy drinks for optimal Nitric Oxide bioavailability?",
-            "Q3 (Thermal Stability): Can CJ BIO share UHT / pasteurization heat-stability data and Maillard reaction prevention guidelines for RTD drinks?",
-            "Q4 (Clinical & Claim Support): Are clinical study summaries and certificate of origin (FTA) documents available to substantiate customer marketing claims?",
-            "Q5 (Pharma/Cosmetic Grade & Commercials): Confirm availability of API/cosmetic-grade INCI documentation (for oral care), pricing, MOQ, and humidity-protection packaging."
+            "Question 1 (In-Branding 'AMINATURE® Inside'): What co-marketing and technical support does CJ BIO offer for Vietnamese brands displaying the AMINATURE® trustmark logo, mirroring Korea's Triple Arginine and US KAGED Muscle?",
+            "Question 2 (Citrulline Malate 1:1 vs 2:1): Which Citrulline Malate grade (1:1 or 2:1) does CJ BIO recommend for RTD canned energy drinks in terms of solubility, pH stability, and tartness balance?",
+            "Question 3 (20+ QC Item Superiority & 5-Year Shelf Life): Can CJ BIO provide the side-by-side specification sheet (heavy metals: Pb ≤0.5 ppm, Hg ≤0.1 ppm, 5-year shelf life) for BJCS to position against low-cost synthetic Chinese sources in QA/QC evaluations?",
+            "Question 4 (Oral Care & Cosmetic INCI Dossiers): For L-Arginine applications in sensitive-teeth toothpaste and skincare, are cosmetic-grade INCI dossiers and Drug Administration of Vietnam (DAV) compliance documents available?",
+            "Question 5 (Portfolio Expansion Roadmap): What is CJ BIO's roadmap to expand into CJ TIDE™ (Nucleotides I+G, Global Market Leader) and biomenrich™ biotic solutions within the BJCS Vietnam distribution framework for 2027?"
           ]
         }
       },
@@ -983,7 +983,7 @@ window.APP_DATA = {
         },
         "hybindQuestionsModal": {
           "title": "Ma Trận Nỗi Đau Khách Hàng HYBIND & 5 Câu Hỏi Chiến Lược Gửi CJ BIO",
-          "subtitle": "Giải pháp khắc phục của BJCS và danh mục 5 điểm cần thống nhất tại cuộc họp ngày 15/10/2026",
+          "subtitle": "Chuẩn bị cho Cuộc họp Kỹ thuật & Thương mại tiếp theo: 30/10/2026 (10:00 AM)",
           "pains": [
             {
               "area": "Chi Phí & Giá Thành",
@@ -1007,16 +1007,16 @@ window.APP_DATA = {
             }
           ],
           "questions": [
-            "Câu hỏi 1 (Kỹ thuật/Liều lượng): Liều lượng khuyến nghị (%) tối ưu của HYBIND cho xúc xích/giò chả nhũ hóa, giăm bông khối và ức gà tẩm ướp là bao nhiêu?",
-            "Câu hỏi 2 (Công thức phối hợp): HYBIND thay thế tỷ lệ 1:1 hoàn toàn phosphate hay cần kết hợp thêm hệ đệm tinh bột/carrageenan để tối ưu kết cấu?",
-            "Câu hỏi 3 (Dữ liệu Thực tế): CJ BIO có thể chia sẻ dữ liệu thử nghiệm thực tế về chỉ số hiệu suất thu hồi tăng thêm so với STPP?",
-            "Câu hỏi 4 (Thủy sản & Hỗ trợ R&D Tại Nhà Máy): Dữ liệu ứng dụng HYBIND trên tôm/cá tra xuất khẩu và khả năng chuyên gia R&D CJ BIO Việt Nam cùng BJCS đi chạy mẫu tại nhà máy?",
-            "Câu hỏi 5 (Thương mại & Kho vận): Bảng giá thương mại, số lượng đặt hàng tối thiểu (MOQ), thời gian giao hàng từ Indonesia và hạn sử dụng lưu kho tại Việt Nam?"
+            "Câu hỏi 1 (Xuất xứ & Thuế Form D): Với nhà máy sản xuất tại Jombang (Indonesia), CJ BIO có cung cấp C/O Form D để hưởng thuế nhập khẩu 0% theo hiệp định ATIGA vào Việt Nam không?",
+            "Câu hỏi 2 (Dữ liệu Thủy sản & Chiết xuất Protein): Dữ liệu chiết xuất Myosin Heavy Chain (200kDa) đã rất rõ trên thịt heo/gia cầm; CJ BIO đã có kết quả thử nghiệm tương đương trên phi-lê cá tra và surimi để thay thế STPP xuất khẩu EU/Mỹ chưa?",
+            "Câu hỏi 3 (Liều lượng & Quy cách 20kg): Với mã sản phẩm 209581 (Thùng 20kg), hạn sử dụng tối đa và điều kiện bảo quản chống ẩm tại kho khí hậu nhiệt đới Việt Nam là bao lâu? Liều dùng 0.2%–0.8% có tối ưu cho cả giò lụa và giò thủ?",
+            "Câu hỏi 4 (Công bố Pháp lý Nghị định 15): CJ BIO đề xuất tên gọi công bố nhãn tại Việt Nam là 'Chiết xuất nấm men / Hương tự nhiên' (Nguyên liệu thực phẩm) hay 'Phụ gia thực phẩm', và tài liệu tự công bố tại Thái Lan/Indonesia có thể chia sẻ không?",
+            "Câu hỏi 5 (Mẫu thử trước 30/10): CJ BIO có thể giao mẫu thử lab (1kg–5kg mã 209581) đến văn phòng BJCS TP.HCM trước ngày 30/10/2026 để đội ngũ kỹ thuật chạy sàng lọc trước phiên làm việc không?"
           ]
         },
         "fgaaQuestionsModal": {
           "title": "Ma Trận Nỗi Đau Khách Hàng FGAA & 5 Câu Hỏi Chiến Lược Gửi CJ BIO",
-          "subtitle": "Khung bán hàng giải pháp công thức & 5 câu hỏi kỹ thuật gửi CJ BIO ngày 15/10/2026",
+          "subtitle": "Chuẩn bị cho Cuộc họp Kỹ thuật & Thương mại tiếp theo: 30/10/2026 (10:00 AM)",
           "pains": [
             {
               "area": "Cảm Quan & Vị Giác",
@@ -1040,11 +1040,11 @@ window.APP_DATA = {
             }
           ],
           "questions": [
-            "Câu hỏi 1 (Che vị đắng): CJ BIO có tài liệu hướng dẫn công thức che vị đắng cho L-Arginine và L-Histidine trong đồ uống không?",
-            "Câu hỏi 2 (Tỷ lệ Phối trộn): Tỷ lệ phối trộn vàng giữa L-Arginine và L-Citrulline trong đồ uống thể thao / nước tăng lực để tối ưu hóa nồng độ Nitric Oxide là bao nhiêu?",
-            "Câu hỏi 3 (Độ ổn định nhiệt): Dữ liệu về độ ổn định nhiệt của các axit amin này khi chạy qua dây chuyền tiệt trùng UHT/Pasteurization trong đồ uống đóng chai?",
-            "Câu hỏi 4 (Dữ liệu Lâm sàng & Xuất xứ): CJ BIO có thể cung cấp báo cáo lâm sàng về sinh khả dụng và chứng nhận xuất xứ ưu đãi thuế quan (C/O FTA) không?",
-            "Câu hỏi 5 (Tiêu chuẩn Dược/Mỹ phẩm & Kho vận): Tài liệu chuẩn mỹ phẩm (cho kem đánh răng), bảng giá, MOQ, thời gian giao hàng và quy cách bao bì chống ẩm?"
+            "Câu hỏi 1 (Chương trình In-Branding 'AMINATURE® Inside'): CJ BIO có chính sách đồng hành tiếp thị thế nào khi khách hàng Việt Nam (nước tăng lực, TPCN) in logo chứng nhận AMINATURE® lên bao bì như case-study Triple Arginine tại Hàn Quốc và KAGED tại Mỹ?",
+            "Câu hỏi 2 (Citrulline Malate 1:1 vs 2:1): Giữa Citrulline Malate 1:1 và 2:1, CJ BIO khuyến nghị dòng nào tối ưu nhất cho đồ uống đóng lon RTD về độ tan và độ chua thanh tự nhiên?",
+            "Câu hỏi 3 (Lợi thế 20+ chỉ tiêu QC & Hạn dùng 5 năm): CJ BIO có thể cung cấp bảng so sánh chi tiết 20+ chỉ tiêu kiểm soát (Kim loại nặng: Chì ≤0.5ppm, Thủy ngân ≤0.1ppm, Hạn dùng 5 năm) để BJCS thuyết phục các bộ phận QA/QC bác bỏ hàng hóa chất giá rẻ Trung Quốc?",
+            "Câu hỏi 4 (Hồ sơ Mỹ phẩm & Chăm sóc răng miệng): Đối với dòng L-Arginine ứng dụng trong kem đánh răng giảm ê buốt và mỹ phẩm, CJ BIO đã có sẵn trọn bộ hồ sơ INCI, tiêu chuẩn độ tinh khiết và chứng nhận an toàn mỹ phẩm để nộp Cục Quản lý Dược Việt Nam chưa?",
+            "Câu hỏi 5 (Mở rộng Portfolios): Lộ trình CJ BIO cùng BJCS mở rộng sang các dòng nguyên liệu thế mạnh khác như CJ TIDE™ (Nucleotides I+G - Thị phần số 1 toàn cầu) và men vi sinh Biomenrich™ trong năm 2027?"
           ]
         }
       },
@@ -1520,8 +1520,8 @@ window.APP_DATA = {
           ]
         },
         "hybindQuestionsModal": {
-          "title": "HYBIND 고객 페인포인트 대응 및 CJ BIO 확인 요청 사항",
-          "subtitle": "BJCS의 가치 영업 대응 논리 및 2026년 10월 15일 미팅 핵심 어젠다 5가지",
+          "title": "HYBIND 고객 핵심 고민 & CJ BIO 대상 5대 전략 질문",
+          "subtitle": "차기 기술 및 커머셜 심층 미팅 제안: 2026년 10월 30일 (오전 10:00)",
           "pains": [
             {
               "area": "원가 및 경제성",
@@ -1545,16 +1545,16 @@ window.APP_DATA = {
             }
           ],
           "questions": [
-            "질문 1 (최적 투입량 %): 유화형 소시지(Giò lụa) vs. 통 근육 햄 vs. 양념 치킨 등 육종별 HYBIND 권장 투입량(Dosage %)은 어떠합니까?",
-            "질문 2 (복합 배합 가이드): 인산염 1:1 단독 대체가 가능합니까, 혹은 전분/카라기난 등과의 시너지 배합 가이드가 있습니까?",
-            "질문 3 (TCO 성공 사례): STPP 대비 실제 조리 수율(Cooking Yield) 증가율을 보여주는 배틀카드 및 현장 케이스 스터디 공유가 가능합니까?",
-            "질문 4 (수산물 적용 및 R&D 동행): 새우/팡가시우스 무인산염(NP) 침지 관련 검증 데이터 유무 및 CJ BIO 베트남 R&D 담당자의 고객사 공장 테스트 동행 가능 여부?",
-            "질문 5 (상업 조건 및 유통기한): 인도네시아 공장 공급 단가, MOQ, 리드타임 및 베트남 보관 환경 기준 유통기한(Shelf-life)은 어떠합니까?"
+            "질문 1 (인도네시아 쫌방 공장 및 Form D 관세): 쫌방 공장 생산 제품에 대해 베트남 ATIGA 협정에 따른 0% 특혜관세(Form D C/O) 발급이 가능한지요?",
+            "질문 2 (수산가공 적용 및 미오신 단백질 추출): 돈육/계육에서 입증된 미오신 중쇄(200kDa) 추출 효과를 바탕으로, 베트남 판가시우스(Pangasius) 필렛 및 수리미용 STPP 대체 데이터가 있는지요?",
+            "질문 3 (권장 투입량 및 20kg 포장재): 자재코드 209581 (20kg 카톤박스)의 베트남 고온다습 창고 보관 유통기한과 0.2%~0.8% 투입량이 유화형 및 조립형 소시지에 모두 최적화되어 있는지요?",
+            "질문 4 (베트남 법적 품목 신고): 베트남 Decree 15 규정상 '천연 발효 향미소재(식품원료)' 또는 '식품첨가물' 중 어떤 분류로 신고를 권장하시며, 태국/인니 선례 서류 공유가 가능한지요?",
+            "질문 5 (10월 30일 미팅 전 샘플 제공): 10월 30일 차기 미팅 전 사전 랩 테스트를 위해 자재코드 209581 랩 샘플(1~5kg)을 호치민 BJCS 랩으로 사전 발송해 주실 수 있는지요?"
           ]
         },
         "fgaaQuestionsModal": {
-          "title": "FGAA 고객 페인포인트 대응 및 CJ BIO 확인 요청 사항",
-          "subtitle": "제형 솔루션 영업(Formulation Selling) 전략 및 10월 15일 미팅 핵심 질의 5가지",
+          "title": "AMINATURE® FGAA 고객 핵심 고민 & CJ BIO 대상 5대 전략 질문",
+          "subtitle": "차기 기술 및 커머셜 심층 미팅 제안: 2026년 10월 30일 (오전 10:00)",
           "pains": [
             {
               "area": "맛과 관능 (쓴맛)",
@@ -1578,11 +1578,11 @@ window.APP_DATA = {
             }
           ],
           "questions": [
-            "질문 1 (쓴맛 마스킹 가이드): 음료 제형 내 L-Arginine 및 L-Histidine의 쓴맛 차폐(Taste masking)를 위한 CJ BIO 가이드라인이 있습니까?",
-            "질문 2 (아르기닌+시트룰린 배합비): 프리워크아웃 및 에너지 음료에서 산화질소(NO) 생체이용률을 극대화하는 권장 황금 비율은 무엇입니까?",
-            "질문 3 (열 안정성 데이터): RTD 음료의 UHT / 파스퇴르 살균 공정 통과 시 열 안정성 및 갈변 방지 가이드 데이터가 있습니까?",
-            "질문 4 (임상 데이터 및 원산지 증명): 고객사 마케팅 클레임 지원을 위한 생체이용률 임상 요약 자료 및 FTA 원산지 증명서(C/O) 제공이 가능합니까?",
-            "질문 5 (의약/화장품 등급 및 물류): 구강케어용 화장품 등급(INCI) 문서 지원 여부, 가격, MOQ, 리드타임 및 베트남 다습 환경 대응 포장 사양은 어떠합니까?"
+            "질문 1 (인브랜딩 'AMINATURE® Inside' 지원): 한국의 트리플 아르기닌 및 미국 KAGED 사례처럼 베트남 음료/건기식 패키지에 AMINATURE® 로고를 적용할 때의 마케팅 및 기술 지원 정책은 무엇인지요?",
+            "질문 2 (시트룰린 말레이트 1:1 vs 2:1 선정): RTD 캔 에너지 음료 개발 시 용해도 및 산미 밸런스 측면에서 1:1과 2:1 중 어느 그레이드를 권장하시는지요?",
+            "질문 3 (20대 품질 관리 항목 및 5년 유통기한): 중국산 저가 합성 원료 대비 차별화를 위해 중금속(납 ≤0.5ppm, 수은 ≤0.1ppm) 및 5년 유통기한을 증명하는 비교 스펙 시트 제공이 가능한지요?",
+            "질문 4 (구강케어 및 화장품 INCI 서류): 시린이 케어 치약 및 스킨케어용 L-Arginine 적용을 위한 화장품 INCI 규격 및 베트남 식약청(DAV) 신고 서류가 구비되어 있는지요?",
+            "질문 5 (향후 포트폴리오 확장): 2027년 글로벌 1위 핵산 제품인 CJ TIDE™(I+G) 및 바이오멘리치(biomenrich™)로의 유통 파트너십 확장 로드맵은 어떻게 되는지요?"
           ]
         }
       },
